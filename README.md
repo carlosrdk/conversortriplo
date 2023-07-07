@@ -8,9 +8,9 @@ O Conversor Triplo é uma ferramenta que permite a conversão de números entre 
 
 - Funcionalidades
 
-    1. Conversão de números decimais para binários e hexadecimais.
-    2. Conversão de números binários para decimais e hexadecimais.
-    3. Conversão de números hexadecimais para decimais e binários.
+    - Conversão de números decimais para binários e hexadecimais.
+    - Conversão de números binários para decimais e hexadecimais.
+    - Conversão de números hexadecimais para decimais e binários.
 
 - Como Usar
 

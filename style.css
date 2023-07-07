@@ -11,6 +11,15 @@ header{
   text-align: center;
 }
 
+header h1{
+    transition: all .4s;
+}
+
+header h1:hover{
+  transform: scale(1.03);
+    cursor: pointer;
+}
+
 main{
   background-color: #85ebd9;
   padding: 50px 0px;
@@ -27,13 +36,22 @@ footer{
   text-align: center;
   padding: 40px;
   width: 50%;
-  margin: auto;
   background-color: #2f404d;
   color: #FFFFFF;
   border-radius: 10px;
-
-
+  margin: auto;
 }
+
+.conversor input{
+  border-radius: 5px;
+  outline: none;
+  border: 1px solid #2f404d;
+}
+
+.conversor label:not(first-child){
+  margin-left: 20px;
+}
+
 
 .containerContent{
   display: flex;
@@ -47,5 +65,9 @@ footer{
   margin: 0px 30px;
   border-radius: 8px;
   padding: 20px;
-  border: 1px solid red;
+}
+
+.containerContent h2, p{
+  margin-bottom: 20px;
+  text-align:center;
 }

@@ -72,7 +72,7 @@ footer{
   text-align:center;
 }
 
-@media (max-width:700px){
+@media (max-width:900px){
   .conversor{
     flex-direction: column;
   }
@@ -81,6 +81,8 @@ footer{
     margin-left: 0px;
     width: 100%;
     margin-bottom: 20px;
+    flex-direction: column;
+    width: 100%;
   }
   
   .containerContent{
@@ -89,5 +91,12 @@ footer{
   
   .containerContent div{
     margin-bottom: 40px;
+  }
+}
+
+@media (max-width:1400px){
+  .conversor{
+    flex-direction: column;
+    width: 100%;
   }
 }

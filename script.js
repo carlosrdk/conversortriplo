@@ -15,3 +15,12 @@ function binarioDecimalHexadecimal() {
     document.getElementById("decimal").value = valorDecimal;
     document.getElementById("hexadecimal").value = valorHexadecimal;
 }
+
+function hexadecimalBinarioDecimal() {
+    let valorHexadecimal = document.getElementById("hexadecimal").value;
+    let valorDecimal = parseInt(valorHexadecimal, 16);
+    let valorBinario = valorDecimal.toString(2);
+
+    document.getElementById("decimal").value = valorDecimal;
+    document.getElementById("binario").value = valorBinario;
+}

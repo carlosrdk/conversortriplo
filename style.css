@@ -1,102 +1,118 @@
-*{
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Quicksand', sans-serif;
 }
 
-header{
+header {
   background-color: #2f404d;
   color: #FFFFFF;
-  padding: 30px;
+  padding: 4rem 0;
   text-align: center;
 }
 
-header h1{
-    transition: all .4s;
+header h1 {
+  transition: all .4s;
 }
 
-header h1:hover{
+header h1:hover {
   transform: scale(1.03);
-    cursor: pointer;
+  letter-spacing: 0.8rem;
+  cursor: pointer;
 }
 
-main{
-  background-color: #85ebd9;
-  padding: 50px 0px;
+main {
+  padding: 4rem 0;
+  background-image: url(img/background.jpg);
+  background-size: cover;
 }
 
-footer{
+
+footer {
   background-color: #2f404d;
   color: #FFFFFF;
-  padding: 30px;
   text-align: center;
+  padding: 30px 0px;
 }
 
-.conversor{
+.conversor {
   text-align: center;
-  padding: 40px;
-  width: 50%;
-  background-color: #2f404d;
+  padding: 60px 0px;
+  width: 800px;
+  margin: 0px auto 50px auto;
   color: #FFFFFF;
   border-radius: 10px;
-  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgba(255, 255, 255, 0.6);
 }
 
-.conversor input{
-  border-radius: 5px;
+.conversor input {
+  border-radius: 10px;
+  border: none;
   outline: none;
-  border: 1px solid #2f404d;
+  padding: 10px;
 }
 
-.conversor label:not(first-child){
-  margin-left: 20px;
+.conversor>div {  
+  display: flex;
+  flex-direction: column;
+  color: black;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+}
+.conversor input {
+  letter-spacing: 0.1rem;
+  font-size: 14px;
 }
 
+.conversor label {
+  margin-bottom: 1.5vh;
+}
 
-.containerContent{
+.containerContent {
   display: flex;
   flex-direction: row;
-  padding: 50px 20px 20px 20px;
+  width: 1200px;
+  margin: auto;
+  justify-content: space-around;
 }
 
-.containerContent div{
-  color: #FFFFFF;
-  background-color: #3d898d;
-  margin: 0px 30px;
-  border-radius: 8px;
+.containerContent > div {
+  color: black;
+  background-color: rgba(255, 255, 255, 0.6);
   padding: 20px;
+  width: 30%;
+}
+.containerContent h2 {
+  text-align: center;
+}
+.containerContent p {
+  text-align: justify;
+  margin: 20px 15px 0px;
 }
 
-.containerContent h2, p{
-  margin-bottom: 20px;
-  text-align:center;
-}
+@media screen and (max-width: 1200px) {
+  .conversor {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 60px;
+  }
+  .conversor > div {
+    margin: 0px 30px;
+    gap: 10px;
+  }
+  .containerContent {
+    flex-direction: column;
+    gap: 60px;
+    width: 100%;
+  }
+  .containerContent > div {
+    width: 100%;
+  }
 
-@media (max-width:900px){
-  .conversor{
-    flex-direction: column;
-  }
-  
-  .conversor input, .conversor label{
-    margin-left: 0px;
-    width: 100%;
-    margin-bottom: 20px;
-    flex-direction: column;
-    width: 100%;
-  }
-  
-  .containerContent{
-    flex-direction: column;
-  }
-  
-  .containerContent div{
-    margin-bottom: 40px;
-  }
-}
-
-@media (max-width:1400px){
-  .conversor{
-    flex-direction: column;
-    width: 100%;
-  }
 }

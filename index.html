@@ -17,32 +17,49 @@
     <section>
       <div class="conversor">
         <div>
-          <label for="decimal">Decimal: </label>
-          <input type="text" id="decimal" oninput="decimalBinarioHexadecimal()">
+          <div>
+            <label for="decimal">Decimal: </label>
+            <input type="text" id="decimal" oninput="decimalBinarioHexadecimal()">
+          </div>
+          <div>
+            <label for="binario">Binário: </label>
+            <input type="text" id="binario" oninput="binarioDecimalHexadecimal()">
+          </div>
+          <div>
+            <label for="hexadecimal">Hexadecimal: </label>
+            <input type="text" id="hexadecimal" oninput="hexadecimalDecimalBinario()">
+          </div>
         </div>
-        <div>
-          <label for="binario">Binário: </label>
-          <input type="text" id="binario" oninput="binarioDecimalHexadecimal()">
-        </div>
-        <div>
-          <label for="hexadecimal">Hexadecimal: </label>
-          <input type="text" id="hexadecimal" oninput="hexadecimalDecimalBinario()">
-        </div>
+        <button onclick="copiarTransferencia()">Copiar</button>
       </div>
     </section>
     <section>
       <div class="containerContent">
         <div>
           <h2>Sistema Decimal</h2>
-          <p>O sistema decimal é o mais utilizado no cotidiano e é baseado em dez dígitos: 0, 1, 2, 3, 4, 5, 6, 7, 8 e 9. Ele segue o princípio do valor posicional, onde cada dígito ocupa uma posição e representa uma potência de 10. O dígito mais à direita representa as unidades, o próximo à esquerda representa as dezenas, o próximo às centenas e assim por diante. Por exemplo, o número decimal "357" é igual a 3x10^2 + 5x10^1 + 7x10^0, que é igual a 357 em decimal.</p>
+          <p>O sistema decimal é o mais utilizado no cotidiano e é baseado em dez dígitos: 0, 1, 2, 3, 4, 5, 6, 7, 8 e
+            9. Ele segue o princípio do valor posicional, onde cada dígito ocupa uma posição e representa uma potência
+            de 10. O dígito mais à direita representa as unidades, o próximo à esquerda representa as dezenas, o próximo
+            às centenas e assim por diante. Por exemplo, o número decimal "357" é igual a 3x10^2 + 5x10^1 + 7x10^0, que
+            é igual a 357 em decimal.</p>
         </div>
         <div>
           <h2>Sistema Binário</h2>
-          <p>O sistema binário é baseado em dois dígitos: 0 e 1. Ele é fundamental para a computação, pois os computadores digitais utilizam a eletricidade para representar informações, que são armazenadas e processadas em forma binária. Cada dígito binário é chamado de bit (abreviação de "binary digit"). Os números binários são expressos como sequências de bits, onde cada posição representa uma potência de 2. Por exemplo, o número binário "10110" é igual a 1x2^4 + 0x2^3 + 1x2^2 + 1x2^1 + 0x2^0, que é igual a 22 em decimal.</p>
+          <p>O sistema binário é baseado em dois dígitos: 0 e 1. Ele é fundamental para a computação, pois os
+            computadores digitais utilizam a eletricidade para representar informações, que são armazenadas e
+            processadas em forma binária. Cada dígito binário é chamado de bit (abreviação de "binary digit"). Os
+            números binários são expressos como sequências de bits, onde cada posição representa uma potência de 2. Por
+            exemplo, o número binário "10110" é igual a 1x2^4 + 0x2^3 + 1x2^2 + 1x2^1 + 0x2^0, que é igual a 22 em
+            decimal.</p>
         </div>
         <div>
           <h2>Sistema Hexadecimal</h2>
-          <p>O sistema hexadecimal é baseado em dezesseis dígitos: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E e F. Os dígitos A a F são utilizados para representar os valores de 10 a 15, respectivamente. O sistema hexadecimal é frequentemente usado na computação, especialmente para representar endereços de memória, cores e valores de bytes. Cada dígito hexadecimal representa uma potência de 16. O dígito mais à direita representa as unidades, o próximo à esquerda representa as 16s, o próximo às 256s e assim por diante. Por exemplo, o número hexadecimal "1F" é igual a 1x16^1 + 15x16^0, que é igual a 31 em decimal.</p>
+          <p>O sistema hexadecimal é baseado em dezesseis dígitos: 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, A, B, C, D, E e F. Os
+            dígitos A a F são utilizados para representar os valores de 10 a 15, respectivamente. O sistema hexadecimal
+            é frequentemente usado na computação, especialmente para representar endereços de memória, cores e valores
+            de bytes. Cada dígito hexadecimal representa uma potência de 16. O dígito mais à direita representa as
+            unidades, o próximo à esquerda representa as 16s, o próximo às 256s e assim por diante. Por exemplo, o
+            número hexadecimal "1F" é igual a 1x16^1 + 15x16^0, que é igual a 31 em decimal.</p>
         </div>
       </div>
     </section>

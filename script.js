@@ -24,3 +24,12 @@ function hexadecimalDecimalBinario() {
     document.getElementById("decimal").value = valorDecimal;
     document.getElementById("binario").value = valorBinario;
 }
+
+function copiarTransferencia() {
+    let transferencia = "";
+    transferencia += "Decimal: " + document.getElementById("decimal").value;
+    transferencia += "\nBinário: " + document.getElementById("binario").value;
+    transferencia += "\nHexadecimal: " + document.getElementById("hexadecimal").value;
+
+    navigator.clipboard.writeText(transferencia)
+}

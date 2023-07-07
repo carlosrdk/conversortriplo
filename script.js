@@ -6,3 +6,12 @@ function decimalBinarioHexadecimal() {
     document.getElementById("binario").value = valorBinario;
     document.getElementById("hexadecimal").value = valorHexadecimal;
 }
+
+function binarioDecimalHexadecimal() {
+    let valorBinario = document.getElementById("binario").value;
+    let valorDecimal = parseInt(valorBinario, 2);
+    let valorHexadecimal = valorDecimal.toString(16).toUpperCase();
+
+    document.getElementById("decimal").value = valorDecimal;
+    document.getElementById("hexadecimal").value = valorHexadecimal;
+}

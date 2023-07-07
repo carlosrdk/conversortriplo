@@ -15,7 +15,14 @@
   <main>
     <section>
       <div class="conversor">
-CAIXA DO CONVERSOR
+        <label for="decimal">Decimal: </label>
+        <input type="text" id="decimal" oninput="decimalBinarioHexadecimal()">
+
+        <label for="binario">Binário: </label>
+        <input type="text" id="binario" oninput="binarioDecimalHexadecimal()">
+
+        <label for="hexadecimal">Hexadecimal: </label>
+        <input type="text" id="hexadecimal" oninput="hexadecimalDecimalBinario()">
       </div>
     </section>
     

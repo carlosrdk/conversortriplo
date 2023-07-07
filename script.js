@@ -16,7 +16,7 @@ function binarioDecimalHexadecimal() {
     document.getElementById("hexadecimal").value = valorHexadecimal;
 }
 
-function hexadecimalBinarioDecimal() {
+function hexadecimalDecimalBinario() {
     let valorHexadecimal = document.getElementById("hexadecimal").value;
     let valorDecimal = parseInt(valorHexadecimal, 16);
     let valorBinario = valorDecimal.toString(2);

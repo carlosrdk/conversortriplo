@@ -4,7 +4,7 @@ Conversor de números entre os sistemas decimal, hexadecimal e binário.
 
 - Sobre o Projeto
 
-O Conversor Triplo é uma ferramenta que permite a conversão de números entre os sistemas decimal, hexadecimal e binário. É uma solução prática e fácil de usar, desenvolvida para auxiliar estudantes, desenvolvedores e entusiastas em suas atividades que envolvam esses sistemas numéricos.
+    O Conversor Triplo é uma ferramenta que permite a conversão de números entre os sistemas decimal, hexadecimal e binário. É uma solução prática e fácil de usar, desenvolvida para auxiliar estudantes, desenvolvedores e entusiastas em suas atividades que envolvam esses sistemas numéricos.
 
 - Funcionalidades
 

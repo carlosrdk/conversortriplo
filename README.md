@@ -21,5 +21,5 @@ O Conversor Triplo é uma ferramenta que permite a conversão de números entre 
 
 - Integrantes
 
-    Carlos Rangel
-    Vinicius Raphael
+    - Carlos Rangel
+    - Vinicius Raphael
